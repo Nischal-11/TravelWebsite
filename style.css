@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* for horizontal scrolling of a page */
+body,
+html {
+    overflow-x: hidden;
+
+}
+
+a {
+    text-decoration: none;
+    color: whitesmoke;
+    position: relative;
+    padding: 0 10px;
+    font-size: 22px;
+}
+
+.nav-links a::after {
+    content: "";
+    position: absolute;
+    background-color: #130401;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+}
+
+a:hover {
+    color: black;
+}
+
+a:hover::after {
+    width: 100%
+}
+
+.ctn:hover {
+    color: black;
+    /* transition: none; */
+}
+
+/* navbar */
+
+.navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 20px;
+    color: whitesmoke;
+    font-size: 3vmin;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+}
+
+.nav-links li {
+    margin: 0 30px;
+}
+
+header {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(./img/header-bg.png);
+    background-position: bottom;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.header-content {
+    margin-bottom: 150px;
+    color: whitesmoke;
+    text-align: center;
+}
+
+.header-content h2 {
+    font-size: 4vmin;
+}
+
+.line {
+    width: 150px;
+    height: 4px;
+    background: crimson;
+    margin: 10px auto;
+    border-radius: 5px;
+}
+
+.header-content h1 {
+    font-size: 7vmin;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.ctn {
+    padding: 8px 15px;
+    background: #d97c25;
+    border-radius: 30px;
+    color: whitesmoke;
+}
+
+section {
+    width: 80%;
+    margin: 80px auto;
+}
+
+.title {
+    text-align: center;
+    font-size: 4vmin;
+    color: #471002;
+}
+
+/* events */
+
+.events .row {
+    margin-top: 50px;
+}
+
+h4 {
+    font-size: 5vmin;
+    color: #471002;
+    margin: 20px auto;
+}
+
+p {
+    color: rgb(45, 37, 3);
+    padding: 0px 40px;
+    font-size: 3vmin;
+
+}
+
+.events .ctn {
+    margin-top: 30px;
+}
+
+/* row */
+
+.row {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    width: 100%;
+    justify-content: space-between;
+    /* margin-left: 50px; */
+    /* background-color: aqua; */
+
+}
+
+.row .col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* explore */
+.explore {
+    width: 100%;
+    height: 100vh;
+    background-image: url(./img/bg2.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+
+}
+
+.explore-content {
+    width: 60%;
+    padding: 50px;
+    color: whitesmoke;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.explore-content h1 {
+    font-size: 7vmin;
+    margin: 50px;
+}
+
+.explore-content p {
+    color: rgb(255, 255, 255);
+    /* font-family: sans-serif; */
+    font-size: 1.5rem;
+    margin-left: 55px;
+
+}
+
+.explore-content .ctn {
+    margin-top: 40px;
+}
+
+/* img */
+.content-col {
+    width: 40%;
+}
+
+.content-col h1 {
+    font-size: 5vmin;
+    color: #471002;
+    margin-left: 20px;
+    padding: 5px;
+    margin-left: 30px;
+}
+
+.content-col p {
+    padding: 0;
+    margin: 30px auto;
+    margin-left: 30px;
+    font-size: 1.5rem;
+    /* font-family: sans-serif; */
+}
+
+.content-col .line {
+    margin-left: 37px;
+}
+
+.content-col .ctn {
+    margin-left: -100px;
+
+}
+
+.image-col {
+    width: 60%;
+}
+
+.tour {
+    margin-bottom: 50px;
+}
+
+.tour .image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: center;
+}
+
+.image-gallery img {
+    max-width: 300px;
+    margin: 10px;
+}
+
+/* footer  */
+/* margin-top: 10px;
+    margin-bottom: 0; */
+
+/* .footer{
+    width:100%;
+    min-height: 100px;
+    padding: 5px;
+    margin: 10px 0;
+    background:#d97c25;
+    text-align: center;
+}
+.footer p{
+    color: #d97c25;
+    margin: 20px auto;
+    padding: 20px auto;
+    font-size: 1.6rem;
+} */
